@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Synapsewarts</title>
+</head>
+<body>
+    <header class="header">
+        <img class="synapsewarts-header-logo" src="synapsewarts_white_filled_crest.png" alt="Logo Synapsewarts">
+        <h1 id="synapsewarts-header-title">Synapsewarts</h1>
+        <form class="synapsewarts-login">
+            <input type="text" name="email" placeholder="Email" class="input-email">
+            <input type="password" name="password" placeholder="Senha" class="input-senha">
+            <button class="btn-login">Conectar</button>
+        </form>
+    </header>
+    <main>
+        <form id="evaluation-form" action="">
+            <h2>Formulário de Avaliação</h2>
+            <div class="container-nome-sobrenome">
+                <input type="text" id="input-name" placeholder="Nome">
+                <input type="text" id="input-lastname" placeholder="Sobrenome">
+            </div>
+
+            <div class="container-email-casa">
+                <input type="text" id="input-email" placeholder="Email">
+                <label for="house">Casa: </label>
+                <select name="" id="house">
+                    <option value="Datanória" id="datanoria-house">Datanória</option>
+                    <option value="Marketpuff" id="marketpuff-house">Marketpuff</option>
+                    <option value="Webnode" id="webnode-house">Webnode</option>
+                    <option value="Neuralina" id="neuralina-house">Neuralina</option>
+                </select>
+            </div>
+            <hr>
+            <div class="container-familia-conteudo">
+                <div class="container-familia">
+                    <label for="" id="label-family">Qual sua especialidade?</label><br>
+                    <input type="radio" name="family" value="Dados" id="data">
+                    <label for="data">Ciência de Dados</label><br>
+                    <input type="radio" name="family" value="Marketing" id="marketing">
+                    <label for="marketing">Marketing Digital</label><br>
+                    <input type="radio" name="family" value="Web" id="web">
+                    <label for="web">Desenvolvimento Web</label>
+                </div>
+                
+                <div class="container-conteudo">
+                    <label id="label-content">Quais tecnologias você deseja aprofundar?</label><br>
+                    <input type="checkbox" class="subject" value="Analytics" id="analytics">
+                    <label for="analytics">Analytics</label>
+                    <input type="checkbox" class="subject" value="SEO" id="seo">
+                    <label for="seo">SEO</label>
+                    <input type="checkbox" class="subject" value="IA" id="ia">
+                    <label for="ia">IA</label><br>
+                    <input type="checkbox" class="subject" value="React" id="react">
+                    <label for="react">React</label>
+                    <input type="checkbox" class="subject" value="SQL" id="sql">
+                    <label for="sql">SQL</label>
+                    <input type="checkbox" class="subject" value="Python" id="python">
+                    <label for="python">Python</label>
+                </div>
+            </div>
+            <hr>
+            <div class="label-rate">
+                <label for="" id="label-rate">Como você avalia a Synapsewarts?</label>
+                <input type="radio" name="rate" value="1">1
+                <input type="radio" name="rate" value="2">2
+                <input type="radio" name="rate" value="3">3
+                <input type="radio" name="rate" value="4">4
+                <input type="radio" name="rate" value="5">5
+                <input type="radio" name="rate" value="6">6
+                <input type="radio" name="rate" value="7">7
+                <input type="radio" name="rate" value="8">8
+                <input type="radio" name="rate" value="9">9
+                <input type="radio" name="rate" value="10">10
+            </div>
+            <label class="textarea">Deixe seu comentário sobre nossas conexões neurais:</label>
+            <textarea maxlength="500" cols="10" rows="5"></textarea>
+            <span id="counter">500</span>
+
+            <label id="label-infos">Você concorda com o uso das informações acima para análise de dados? <input type="checkbox" id="agreement"></label>
+
+            <button id="submit-btn" type="submit">Transmitir Dados</button>
+        </form> 
+        <img id="synapsewarts-forms-logo" src="synapsewarts_colored_crest.png" alt="Brasão Synapsewarts">
+    </main>
+
+    <footer>Direitos reservados à Synapsewarts© - Conectando Mentes, Dados e Tecnologia</footer>
+    <script src="script.js"></script>
+</body>
+</html>
